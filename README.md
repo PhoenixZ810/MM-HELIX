@@ -17,10 +17,10 @@
 
 ## To-Do List
 We will **progressively release** these key resources to the community:
-- [✅] **Arxiv Paper**
-- [✅] **MM-HELIX-Benchmark**
-- [✅] **MM-HELIX-100K**
-- [✅] **Checkpoints**
+- [*Coming Soon*] **Arxiv Paper**
+- [*Coming Soon*] **MM-HELIX-Benchmark**
+- [*Coming Soon*] **MM-HELIX-100K**
+- [*Coming Soon*] **Checkpoints**
 - [*Coming Soon*] **Evaluation Code**
 - [*Coming Soon*] **SERG Pipline Code**
 - [*Coming Soon*] **SandBox Code**
