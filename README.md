@@ -25,7 +25,6 @@ We will **progressively release** these key resources to the community:
 - [*Coming Soon*] **SERG Pipline Code**
 - [*Coming Soon*] **SandBox Code**
 - [*Coming Soon*] **AHPO Training Code**
-- [*Coming Soon*] **MM-HELIX-Sandbox**
 
 
 
