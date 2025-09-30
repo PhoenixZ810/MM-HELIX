@@ -21,13 +21,13 @@
 </p>
 
 ## Introduction
-**MM-HELIX** is a holistic platform to **evaluate** and **improve** the *long-chain reflective reasoning* capability of Multimodal LLMs (MLLMs). It includes an RL environment integrating **generator**, **verifier**, and **SERG pipeline**, built upon **42 game / algorithm / puzzle / graph tasks**. It supports **task generation, automatic verification, and reflective CoT synthesis**, enabling scalable training and evaluation of long-chain reflective reasoning.
+**MM-HELIX** is a holistic platform to **evaluate** and **improve** the *long-chain reflective reasoning* capability of MLLMs. It includes an RL environment integrating **Generator**, **Verifier**, and **Solver**, built upon **42 game / algorithm / puzzle / graph tasks**. It supports **task generation, automatic verification, and reflective CoT synthesis**, enabling scalable training and evaluation of multimodal long-chain reflective reasoning.
 
 Based on things above, our work contains:
 
 * **MM-HELIX (Benchmark)** : 42 diverse tasks × 5 difficulty levels = **1,260** multimodal instances; auto **Verifier** ensures objective scoring and reward.
-* **MM-HELIX-100K** : a **100k** sample dataset of high-quality, reflective **Chain-of-Thought (CoT)** traces produced via **SERG** (Step-Elicited Response Generation).
-* **AHPO** : **Adaptive Hybrid Policy Optimization** that unifies off-policy supervision and on-policy exploration in one stage to overcome sparse rewards & forgetting.
+* **MM-HELIX-100K** : a **100k** sample dataset of **multimodal high-quality, reflective Chain-of-Thought traces for instruction-tuning** produced via **SERG (Step-Elicited Response Generation)**.
+* **AHPO** : **Adaptive Hybrid Policy Optimization** that unifies off-policy supervision and on-policy exploration in one stage to overcome sparse rewards(by GRPO) & forgetting(by SFT).
 
 > Using **Qwen2.5-VL-7B** as the base, **AHPO** yields **+18.6%** absolute accuracy on MM-HELIX and **+5.7%** average gain across general math/logic benchmarks!
 
