@@ -443,6 +443,7 @@ For detailed results and rankings, please refer to our interactive leaderboard.
   <img width="100%" src="images/main_table.png">
   <em><p align="center">The 42 tasks in the MM-HELIX benchmark.</p></em>
 </p>
+
 The **MM-HELIX benchmark** is designed to test the limits of multimodal long-chain reflective reasoning in MLLMs.
 
 *   **Diverse and Challenging Tasks:** The benchmark includes 1,260 high-quality samples from 42 unique tasks divided into four categories: **algorithms, graphs, puzzles, and games**.
