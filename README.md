@@ -480,13 +480,10 @@ For detailed results and rankings, please refer to our interactive leaderboard.
 
 If you find our work useful, please consider citing our paper:
 ```bibtex
-@misc{zhao2025mmhelixboostingmultimodallongchain,
-      title={MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with Holistic Platform and Adaptive Hybrid Policy Optimization}, 
-      author={Xiangyu Zhao and Junming Lin and Tianhao Liang and Yifan Zhou and Wenhao Chai and Yuzhe Gu and Weiyun Wang and Kai Chen and Gen Luo and Wenwei Zhang and Junchi Yan and Hua Yang and Haodong Duan and Xue Yang},
-      year={2025},
-      eprint={2510.08540},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2510.08540}, 
+@article{zhao2025mmhelix,
+  title={MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with Holistic Platform and Adaptive Hybrid Policy Optimization},
+  author={Zhao, Xiangyu and Lin, Junming and Liang, Tianhao and Zhou, Yifan and Chai, Wenhao and Gu, Yuzhe and Wang, Weiyun and Chen, Kai and Luo, Gen and Zhang, Wenwei and Yan, Junchi and Yang, Hua and Duan, Haodong and Yang, Xue},
+  journal={arXiv preprint arXiv:2510.08540},
+  year={2025}
 }
 ```
