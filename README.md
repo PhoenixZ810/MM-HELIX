@@ -4,7 +4,7 @@
 # MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with Holistic Platform and Adaptive Hybrid Policy Optimization
 
 <p align="center">
-        🌐 <a href="https://mm-helix.github.io/">HomePage</a>&nbsp&nbsp | &nbsp&nbsp📖 <a href="">Paper</a>&nbsp&nbsp | &nbsp&nbsp🏆 <a href="">Leaderboard</a>
+        🌐 <a href="https://mm-helix.github.io/">HomePage</a>&nbsp&nbsp | &nbsp&nbsp📖 <a href="https://arxiv.org/abs/2510.08540">Paper</a>&nbsp&nbsp | &nbsp&nbsp🏆 <a href="">Leaderboard</a>
 <br>
 🤗 <a href="https://huggingface.co/PhoenixZ/MM-HELIX-7B-Thinking">MM-HELIX-7B-Thinking</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/datasets/tianhao2k/MM-HELIX">MM-HELIX Benchmark</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/datasets/mjuicem/MM-HELIX-100K">MM-HELIX-100K</a>
 </p>
