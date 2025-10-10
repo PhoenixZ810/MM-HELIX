@@ -31,9 +31,9 @@ Our model, based on Qwen2.5-VL-7B, shows a **+18.6%** improvement in accuracy on
 -   [✅] **MM-HELIX-100K Dataset**
 -   [✅] **MM-HELIX-7B-Thinking Model Checkpoint**
 -   [✅] **MM-HELIX Benchmark**
--   [⏳] **Training Code** [*Coming Soon*]
--   [⏳] **Evaluation Code** [*Coming Soon*]
--   [⏳] **SandBox Environment Code** [*Coming Soon*]
+-   [✅] **Evaluation Code in [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)** 
+-   [⏳] **AHPO Training Code & RL Environment** [*Coming Soon*]
+-   [⏳] **42 SandBox Tasks Code** [*Coming Soon*]
 
 
 ## Adaptive Hybrid Policy Optimization (AHPO)
