@@ -52,7 +52,43 @@ AHPO's adaptive mechanism dynamically adjusts the influence of expert data based
   <img src="images/results_1.png">
 </p>
 
-## Results and Leaderboard
+
+
+## MM-HELIX Benchmark
+
+<p align="center">
+  <img width="100%" src="images/main_table.png">
+  <em><p align="center">The 42 tasks in the MM-HELIX benchmark.</p></em>
+</p>
+
+The **MM-HELIX benchmark** is designed to test the limits of multimodal long-chain reflective reasoning in MLLMs.
+
+*   **Diverse and Challenging Tasks:** The benchmark includes 1,260 high-quality samples from 42 unique tasks divided into four categories: **algorithms, graphs, puzzles, and games**.
+
+
+*   **Controlled Difficulty:** Tasks are generated procedurally with five levels of difficulty, from Level 1 (very easy) to Level 5 (very hard), allowing for a detailed analysis of model performance at different complexities.
+
+*   **Automated and Objective Evaluation:** Our framework includes an **Instance Generator**, a deterministic **Solver**, and an automated **Verifier**. The Verifier validates the correctness of model-generated solutions, enabling objective and scalable evaluation, and also serves as a reward oracle in a reinforcement learning setup.
+
+
+## MM-HELIX-100K Dataset: High-Quality Multimodal Reflective CoT
+
+To train models for complex reasoning, a large-scale, high-quality dataset is essential. We introduce **MM-HELIX-100K**, a dataset of 100,000 instruction-tuning instances with detailed, reflective reasoning paths.
+
+This dataset was created using our **Step-Elicited Response Generation (SERG)** pipeline, which efficiently generates high-quality Chain-of-Thought (CoT) trajectories.
+
+The SERG pipeline works as follows:
+1.  A rule-based CoT constructor first generates a skeletal reasoning path.
+2.  This path is then refined by a powerful language model (Qwen3-235B) to create a more natural, human-like reasoning process that includes reflective steps.
+3.  Finally, each generated trajectory is validated by our automated verifier to ensure its correctness and quality.
+
+<p align="center">
+  <img width="50%" src="images/cot.png">
+  <em><p align="center">The Step-Elicited Response Generation (SERG) pipeline.</p></em>
+</p>
+
+
+## MM-HELIX Leaderboard
 
 Our comprehensive evaluation of 23 leading MLLMs on the MM-HELIX benchmark reveals significant limitations in their reflective reasoning abilities. Even top proprietary models struggle to surpass a 50% accuracy threshold, and a notable performance gap exists between multimodal and text-only inputs.
 <table>
@@ -421,6 +457,8 @@ Our comprehensive evaluation of 23 leading MLLMs on the MM-HELIX benchmark revea
   <em><p align="center"><b>Table 1:</b> Evaluation results on MM-HELIX across multimodal and text-only settings.</p></em>
 </p>
 
+## Training Performance
+
 When applying AHPO to the Qwen2.5-VL-7B model, we observed remarkable improvements. Our final model, **MM-HELIX-7B-Thinking**, not only achieves a **+18.6%** absolute improvement on the MM-HELIX benchmark but also demonstrates strong generalization with a **+5.7%** average gain on general math and logic benchmarks.
 | Method | Type | **In-Domain** |  | | General Reasoning| | |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -437,45 +475,18 @@ When applying AHPO to the Qwen2.5-VL-7B model, we observed remarkable improvemen
 
 For detailed results and rankings, please refer to our interactive leaderboard.
 
-## The MM-HELIX Benchmark
-
-<p align="center">
-  <img width="100%" src="images/main_table.png">
-  <em><p align="center">The 42 tasks in the MM-HELIX benchmark.</p></em>
-</p>
-
-The **MM-HELIX benchmark** is designed to test the limits of multimodal long-chain reflective reasoning in MLLMs.
-
-*   **Diverse and Challenging Tasks:** The benchmark includes 1,260 high-quality samples from 42 unique tasks divided into four categories: **algorithms, graphs, puzzles, and games**.
-
-
-*   **Controlled Difficulty:** Tasks are generated procedurally with five levels of difficulty, from Level 1 (very easy) to Level 5 (very hard), allowing for a detailed analysis of model performance at different complexities.
-
-*   **Automated and Objective Evaluation:** Our framework includes an **Instance Generator**, a deterministic **Solver**, and an automated **Verifier**. The Verifier validates the correctness of model-generated solutions, enabling objective and scalable evaluation, and also serves as a reward oracle in a reinforcement learning setup.
-
-
-
-## The MM-HELIX-100K Dataset
-
-To train models for complex reasoning, a large-scale, high-quality dataset is essential. We introduce **MM-HELIX-100K**, a dataset of 100,000 instruction-tuning instances with detailed, reflective reasoning paths.
-
-This dataset was created using our **Step-Elicited Response Generation (SERG)** pipeline, which efficiently generates high-quality Chain-of-Thought (CoT) trajectories.
-
-The SERG pipeline works as follows:
-1.  A rule-based CoT constructor first generates a skeletal reasoning path.
-2.  This path is then refined by a powerful language model (Qwen3-235B) to create a more natural, human-like reasoning process that includes reflective steps.
-3.  Finally, each generated trajectory is validated by our automated verifier to ensure its correctness and quality.
-
-<p align="center">
-  <img width="70%" src="images/cot.png">
-  <em><p align="center">The Step-Elicited Response Generation (SERG) pipeline.</p></em>
-</p>
-
-
 
 ## Citation
 
 If you find our work useful, please consider citing our paper:
 ```bibtex
-
+@misc{zhao2025mmhelixboostingmultimodallongchain,
+      title={MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with Holistic Platform and Adaptive Hybrid Policy Optimization}, 
+      author={Xiangyu Zhao and Junming Lin and Tianhao Liang and Yifan Zhou and Wenhao Chai and Yuzhe Gu and Weiyun Wang and Kai Chen and Gen Luo and Wenwei Zhang and Junchi Yan and Hua Yang and Haodong Duan and Xue Yang},
+      year={2025},
+      eprint={2510.08540},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.08540}, 
+}
 ```
