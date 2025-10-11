@@ -34,6 +34,7 @@ Our model, based on Qwen2.5-VL-7B, shows a **+18.6%** improvement in accuracy on
 -   [✅] **Evaluation Code in [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)** 
 -   [⏳] **AHPO Training Code & RL Environment** [*Coming Soon*]
 -   [⏳] **42 SandBox Tasks Code** [*Coming Soon*]
+-   [⏳] **Step Elicited Response Generation(SERG) Pipeline** [*Coming Soon*]
 
 
 ## Adaptive Hybrid Policy Optimization (AHPO)
