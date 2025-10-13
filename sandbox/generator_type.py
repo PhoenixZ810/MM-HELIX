@@ -44,6 +44,7 @@ from generator.snake_generator import SnakeGenerator
 from generator.shingoki_generator import ShingokiGenerator
 from generator.nonograms_generator import NonogramsGenerator
 from generator.slidingpuzzle_generator import SlidingPuzzleGenerator
+from generator.sudoku_generator import SudokuGenerator
 
 
 
@@ -89,7 +90,7 @@ generator_type_map = {
     "slidingpuzzle": SlidingPuzzleGenerator,
     "snake": SnakeGenerator,
     "wordladder": WordLadderGenerator,
-
+    'sudoku': SudokuGenerator,
 }
 
 
