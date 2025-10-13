@@ -27,13 +27,13 @@ Our model, based on Qwen2.5-VL-7B, shows a **+18.6%** improvement in accuracy on
 
 ## To-Do List
 
--   [✅] **Arxiv Paper**
--   [✅] **MM-HELIX-100K Dataset**
--   [✅] **MM-HELIX-7B-Thinking Model Checkpoint**
--   [✅] **MM-HELIX Benchmark**
--   [✅] **Evaluation Code in [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)** 
+-   [✅] `2025.10.13` **42 SandBox Tasks Generation Code**, refer to [sandbox](sandbox/README.md)
+-   [✅] `2025.10.08` **Arxiv Paper**
+-   [✅] `2025.10.08` **MM-HELIX-100K Dataset**
+-   [✅] `2025.10.08` **MM-HELIX Benchmark**
+-   [✅] `2025.10.08` **Evaluation Code in [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)**
+-   [✅] `2025.09.30` **MM-HELIX-7B-Thinking Model Checkpoint**
 -   [⏳] **AHPO Training Code & RL Environment** [*Coming Soon*]
--   [⏳] **42 SandBox Tasks Code** [*Coming Soon*]
 -   [⏳] **Step Elicited Response Generation(SERG) Pipeline** [*Coming Soon*]
 
 
