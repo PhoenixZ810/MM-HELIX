@@ -1,19 +1,35 @@
-
-***
-
-# MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with Holistic Platform and Adaptive Hybrid Policy Optimization
-
 <p align="center">
-        🌐 <a href="https://mm-helix.github.io/">HomePage</a>&nbsp&nbsp | &nbsp&nbsp📖 <a href="https://arxiv.org/abs/2510.08540">Paper</a>&nbsp&nbsp | &nbsp&nbsp🏆 <a href="">Leaderboard</a>
+    <img src="https://mm-helix.github.io/static/images/22.png?raw=true" width="150" style="margin-bottom: 0.2;"/>
+<p>
+
+<h3 align="center"><a href="https://arxiv.org/abs/2510.08540" style="color:#9C276A">
+MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with Holistic Platform and Adaptive Hybrid Policy Optimization</a></h3>
+<h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
+
+
+<h5 align="center">
+        
+[![homepage](https://img.shields.io/badge/🪩-HomePage-9C276A.svg)](https://mm-helix.github.io/)
+[![hf_data](https://img.shields.io/badge/🤗-Benchmark-9C276A.svg)](https://huggingface.co/datasets/tianhao2k/MM-HELIX)
+[![hf_data](https://img.shields.io/badge/🤗-Dataset-9C276A.svg)](https://huggingface.co/datasets/mjuicem/MM-HELIX-100K)
+[![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/PhoenixZ/MM-HELIX-7B-Thinking) 
+[![arXiv](https://img.shields.io/badge/Arxiv-2510.08540-AD1C18.svg?logo=arXiv)](https://arxiv.org/abs/2510.08540)
 <br>
-🤗 <a href="https://huggingface.co/PhoenixZ/MM-HELIX-7B-Thinking">MM-HELIX-7B-Thinking</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/datasets/tianhao2k/MM-HELIX">MM-HELIX Benchmark</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/datasets/mjuicem/MM-HELIX-100K">MM-HELIX-100K</a>
-</p>
+</h5> 
 
 <p align="center">
   <img width="100%" src="images/Teaser09241052.png">
 </p>
 
-## Introduction
+## 📰 News
+* **[2025.10.13]**  🔥🔥 Release **SandBox Tasks Generation Code**, refer to [sandbox](sandbox/README.md)!
+* **[2025.10.09]**  🚀🚀 Release [Arxiv Paper](https://arxiv.org/abs/2510.08540)!
+* **[2025.10.09]**  🚀🚀 Release [MM-HELIX-100K Dataset](https://huggingface.co/datasets/mjuicem/MM-HELIX-100K)!
+* **[2025.10.09]**  🚀🚀 Release [MM-HELIX Benchmark](https://huggingface.co/datasets/tianhao2k/MM-HELIX)!
+* **[2025.10.09]**  🚀🚀 Release Evaluation Code in [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)!
+* **[2025.10.09]**  🚀🚀 Release [MM-HELIX-7B-Thinking Model Checkpoint](https://huggingface.co/PhoenixZ/MM-HELIX-7B-Thinking)!
+
+## 🚀 Introduction
 
 While Multimodal Large Language Models (MLLMs) have shown proficiency in tasks like mathematics and logic, their ability for **long-chain reflective reasoning**—a key element for solving complex, real-world problems—is not fully developed. This type of reasoning requires iterative thinking and backtracking, which current models often lack.
 
@@ -25,19 +41,12 @@ While Multimodal Large Language Models (MLLMs) have shown proficiency in tasks l
 
 Our model, based on Qwen2.5-VL-7B, shows a **+18.6%** improvement in accuracy on the MM-HELIX benchmark and a **+5.7%** average gain on general math and logic tasks, demonstrating that reflective reasoning can be effectively learned and generalized.
 
-## To-Do List
+## ✅ To-Do List
 
--   [✅] `2025.10.13` **42 SandBox Tasks Generation Code**, refer to [sandbox](sandbox/README.md)
--   [✅] `2025.10.08` **Arxiv Paper**
--   [✅] `2025.10.08` **MM-HELIX-100K Dataset**
--   [✅] `2025.10.08` **MM-HELIX Benchmark**
--   [✅] `2025.10.08` **Evaluation Code in [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)**
--   [✅] `2025.09.30` **MM-HELIX-7B-Thinking Model Checkpoint**
 -   [⏳] **AHPO Training Code & RL Environment** [*Coming Soon*]
 -   [⏳] **Step Elicited Response Generation(SERG) Pipeline** [*Coming Soon*]
 
-
-## Adaptive Hybrid Policy Optimization (AHPO)
+## 📈 Adaptive Hybrid Policy Optimization (AHPO)
 
 Standard training methods often fall short in complex reasoning tasks. Supervised Fine-Tuning (SFT) can lead to catastrophic forgetting of general capabilities, while on-policy Reinforcement Learning (RL) is inefficient with sparse rewards.
 
@@ -55,7 +64,7 @@ AHPO's adaptive mechanism dynamically adjusts the influence of expert data based
 
 
 
-## MM-HELIX Benchmark
+## 🧩 MM-HELIX Benchmark
 
 <p align="center">
   <img width="100%" src="images/main_table.png">
@@ -72,7 +81,7 @@ The **MM-HELIX benchmark** is designed to test the limits of multimodal long-cha
 *   **Automated and Objective Evaluation:** Our framework includes an **Instance Generator**, a deterministic **Solver**, and an automated **Verifier**. The Verifier validates the correctness of model-generated solutions, enabling objective and scalable evaluation, and also serves as a reward oracle in a reinforcement learning setup.
 
 
-## MM-HELIX-100K Dataset: High-Quality Multimodal Reflective CoT
+## 🧩 MM-HELIX-100K Dataset: High-Quality Multimodal Reflective CoT
 
 To train models for complex reasoning, a large-scale, high-quality dataset is essential. We introduce **MM-HELIX-100K**, a dataset of 100,000 instruction-tuning instances with detailed, reflective reasoning paths.
 
@@ -89,7 +98,7 @@ The SERG pipeline works as follows:
 </p>
 
 
-## MM-HELIX Leaderboard
+## 🎯 MM-HELIX Leaderboard
 
 Our comprehensive evaluation of 23 leading MLLMs on the MM-HELIX benchmark reveals significant limitations in their reflective reasoning abilities. Even top proprietary models struggle to surpass a 50% accuracy threshold, and a notable performance gap exists between multimodal and text-only inputs.
 <table>
