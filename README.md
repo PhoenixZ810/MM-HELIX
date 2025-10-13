@@ -29,6 +29,11 @@ MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with Holistic Plat
 * **[2025.10.09]**  🚀🚀 Release Evaluation Code in [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)!
 * **[2025.10.09]**  🚀🚀 Release [MM-HELIX-7B-Thinking Model Checkpoint](https://huggingface.co/PhoenixZ/MM-HELIX-7B-Thinking)!
 
+## ✅ To-Do List
+
+-   [⏳] **AHPO Training Code & RL Environment** [*Coming Soon*]
+-   [⏳] **Step Elicited Response Generation(SERG) Pipeline** [*Coming Soon*]
+  
 ## 🚀 Introduction
 
 While Multimodal Large Language Models (MLLMs) have shown proficiency in tasks like mathematics and logic, their ability for **long-chain reflective reasoning**—a key element for solving complex, real-world problems—is not fully developed. This type of reasoning requires iterative thinking and backtracking, which current models often lack.
@@ -41,10 +46,7 @@ While Multimodal Large Language Models (MLLMs) have shown proficiency in tasks l
 
 Our model, based on Qwen2.5-VL-7B, shows a **+18.6%** improvement in accuracy on the MM-HELIX benchmark and a **+5.7%** average gain on general math and logic tasks, demonstrating that reflective reasoning can be effectively learned and generalized.
 
-## ✅ To-Do List
 
--   [⏳] **AHPO Training Code & RL Environment** [*Coming Soon*]
--   [⏳] **Step Elicited Response Generation(SERG) Pipeline** [*Coming Soon*]
 
 ## 📈 Adaptive Hybrid Policy Optimization (AHPO)
 
