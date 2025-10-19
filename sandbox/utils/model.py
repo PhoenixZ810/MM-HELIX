@@ -18,7 +18,7 @@ def encode_image(image_path):
 
 def gemini(model_input, image_path):
     from google import genai
-    client = genai.Client(api_key="AIzaSyBAQdnRPbJ3frh0yx7ZGNDVs4RCKhIZLg0")
+    client = genai.Client(api_key="")
 
     myfile = client.files.upload(file=image_path)
 
@@ -34,7 +34,7 @@ def encode_image(image_path):
         return base64.b64encode(image_file.read()).decode('utf-8')
 
 def R1(model_input, image_path=None):
-    client = OpenAI(api_key='YOUR_API_KEY', base_url="http://152.69.226.145:57932/v1")
+    client = OpenAI(api_key='YOUR_API_KEY', base_url="")
     model_name = client.models.list().data[0].id
     response = client.chat.completions.create(
                     model=model_name,
@@ -69,8 +69,7 @@ def gpt_4o(model_input, image_path):
                 }],
                 max_tokens=1000,
             ).choices[0].message.content
-            # print("fail") # Removed the print statement, as it always prints "fail" even on success.
-            break  # Exit the loop on success
+            break
 
         except Exception as e:  # Catch specific exceptions if possible
             print(f"An error occurred: {e}") # Print the error for debugging
